@@ -51,6 +51,7 @@ RUN cd ~ && \
 # Copy web service script
 COPY facerec_service.py /root/facerec_service.py
 
+RUN mkdir /root/faces
 
 # Start the web service
 CMD cd /root/ && \
