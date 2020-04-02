@@ -53,6 +53,8 @@ COPY facerec_service.py /root/facerec_service.py
 
 RUN mkdir /root/faces
 
+COPY faces/*.jpg /root/faces/
+
 # Start the web service
 CMD cd /root/ && \
     python3 facerec_service.py
